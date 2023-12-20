@@ -33,10 +33,10 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="mt-8 px-4 ">
+      <section className="mt-8 pl-4 ">
         <h2 className="mb-5 font-bold uppercase">ofertas</h2>
         <ProductList products={productsWitchDiscount} />
-        <div className=" lg:flex lg:justify-between lg:gap-9 ">
+        <div className=" pr-4 lg:flex lg:justify-between lg:gap-9">
           <Image
             className="mt-8 w-full  lg:w-1/2 "
             src={'/banner-mouses.png'}
@@ -59,7 +59,9 @@ export default async function Home() {
       <section className="mt-8 px-4">
         <h2 className="mb-5 font-bold uppercase">teclados</h2>
 
-        <ProductList products={keyboards} />
+        <div className="flex justify-center">
+          <ProductList products={keyboards} />
+        </div>
 
         <Image
           className="mt-8 w-full lg:hidden"
@@ -81,7 +83,9 @@ export default async function Home() {
 
       <section className="mt-8 px-4 pb-8 ">
         <h2 className="mb-5 font-bold uppercase">mouses</h2>
-        <ProductList products={mouses} />
+        <div className="flex justify-center">
+          <ProductList products={mouses} />
+        </div>
       </section>
     </main>
   )

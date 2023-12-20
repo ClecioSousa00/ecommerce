@@ -914,6 +914,12 @@ video {
 .pb-8 {
   padding-bottom: 2rem;
 }
+.pl-4 {
+  padding-left: 1rem;
+}
+.pr-4 {
+  padding-right: 1rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1033,6 +1039,10 @@ video {
 
 .last\:mr-4:last-child {
   margin-right: 1rem;
+}
+
+.last\:mt-4:last-child {
+  margin-top: 1rem;
 }
 
 .hover\:bg-accent:hover {

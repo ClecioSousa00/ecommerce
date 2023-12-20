@@ -21,11 +21,13 @@ export const Header = () => {
               className="bg-transparent hover:bg-gray-500/30"
               size={'icon'}
               variant={'outline'}
+              aria-label="Abrir menu"
+              data-testid="button-menu"
             >
               <Menu size={18} color="white" />
             </Button>
           </SheetTrigger>
-          <SheetContent side={'left'}>
+          <SheetContent side={'left'} data-testid="menu-content">
             <ul className="mt-6 space-y-2 font-bold">
               <li>
                 <Link
@@ -99,6 +101,7 @@ export const Header = () => {
               className="bg-transparent hover:bg-gray-500/30"
               size={'icon'}
               variant={'outline'}
+              aria-label="Ver carrinho"
             >
               <ShoppingCart size={18} color="white" />
             </Button>
