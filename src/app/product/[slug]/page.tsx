@@ -1,6 +1,9 @@
-import { StarIcon } from 'lucide-react'
+import { ArrowDown, StarIcon } from 'lucide-react'
 import prisma from '../../../lib/prisma'
 import { ProductImages } from '../components/ProductImages'
+import { CounterProduct } from '@/components/CounterProduct'
+import { calculatePriceWithDiscount } from '@/utils/calculatePriceWithDiscount'
+import { Badge } from '@/components/ui/badge'
 
 type ProductProps = {
   params: {
@@ -16,7 +19,10 @@ export default async function Product({ params }: ProductProps) {
   })
 
   console.log(product)
-
+  const newPriceWithDiscount = calculatePriceWithDiscount(
+    Number(product[0].basePrice),
+    product[0].discountPercentage,
+  )
   return (
     <main>
       <ProductImages
@@ -38,6 +44,26 @@ export default async function Product({ params }: ProductProps) {
             (25) avaliações
           </span>
         </div>
+        <div>
+          <div className="flex items-center gap-2">
+            <strong className="text-2xl">{newPriceWithDiscount}</strong>
+            {!!product[0].discountPercentage && (
+              <Badge>
+                <ArrowDown size={14} />
+                <span className="text-xs font-bold">
+                  {product[0].discountPercentage}%
+                </span>
+              </Badge>
+            )}
+          </div>
+          {product[0].discountPercentage > 0 && (
+            <span className="text-secondary-foreground/30  line-through ">
+              De: R$ {Number(product[0].basePrice)}
+            </span>
+          )}
+        </div>
+
+        <CounterProduct />
       </section>
     </main>
   )
