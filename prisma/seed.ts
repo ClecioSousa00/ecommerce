@@ -8,7 +8,8 @@ async function main() {
       data: {
         name: 'Mouses',
         slug: 'mouses',
-        imageUrl: 'https://fsw-store.s3.sa-east-1.amazonaws.com/mouses.png',
+        imageUrl:
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
       },
     })
 
@@ -98,7 +99,8 @@ async function main() {
       data: {
         name: 'Teclados',
         slug: 'keyboards',
-        imageUrl: 'https://fsw-store.s3.sa-east-1.amazonaws.com/keyboards.png',
+        imageUrl:
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
       },
     })
 
@@ -203,7 +205,8 @@ async function main() {
       data: {
         name: 'Fones',
         slug: 'headphones',
-        imageUrl: 'https://fsw-store.s3.sa-east-1.amazonaws.com/headphones.png',
+        imageUrl:
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
       },
     })
 
@@ -308,7 +311,8 @@ async function main() {
       data: {
         name: 'Mousepads',
         slug: 'mousepads',
-        imageUrl: 'https://fsw-store.s3.sa-east-1.amazonaws.com/mousepads.png',
+        imageUrl:
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
       },
     })
 
@@ -413,7 +417,8 @@ async function main() {
       data: {
         name: 'Monitores',
         slug: 'monitors',
-        imageUrl: 'https://fsw-store.s3.sa-east-1.amazonaws.com/monitors.png',
+        imageUrl:
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
       },
     })
 
@@ -424,10 +429,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-S2421HN.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-S2421HN.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-S2421HN.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-S2421HN.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_dell-S2421HN.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9kZWxsLVMyNDIxSE4ucG5nIiwiaWF0IjoxNzA1MDc4Mzk3LCJleHAiOjE3MzY2MTQzOTd9.0jvC5JyP2u71xOEwMAIkNaq017MzsF410exLyb_eciI&t=2024-01-12T16%3A53%3A17.594Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_dell-S2421HN.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9kZWxsLVMyNDIxSE4ucG5nIiwiaWF0IjoxNzA1MDc4NDMyLCJleHAiOjE3MzY2MTQ0MzJ9.HOUiQhKwXUWJgXx6olQxUtAlGDWciOWE_mBJCI4nM_g&t=2024-01-12T16%3A53%3A52.411Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_dell-S2421HN.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19kZWxsLVMyNDIxSE4ucG5nIiwiaWF0IjoxNzA1MDc4NDUxLCJleHAiOjE3MzY2MTQ0NTF9.8fE9fKB-bJLX3ec-Bb1WKTz93zBXx1K9Xko-KKq3r6o&t=2024-01-12T16%3A54%3A11.660Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_dell-S2421HN.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9kZWxsLVMyNDIxSE4ucG5nIiwiaWF0IjoxNzA1MDc4NDcwLCJleHAiOjE3MzY2MTQ0NzB9.Qx2gOfa2Y8ym2m0fE1Bi0mzVs9GJ5JB8lsou2MNbNls&t=2024-01-12T16%3A54%3A30.411Z',
         ],
         basePrice: 1500,
         categoryId: monitorsCategory.id,
@@ -439,10 +444,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-P2422H.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-P2422H.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-P2422H.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-P2422H.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_dell-P2422H.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9kZWxsLVAyNDIySC5wbmciLCJpYXQiOjE3MDUwNzg3MjEsImV4cCI6MTczNjYxNDcyMX0.AD6ZEYsVAuDexMs9fKkgaGK9zwBlrNqiHDlGfHR7jdU&t=2024-01-12T16%3A58%3A41.943Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_dell-P2422H.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19kZWxsLVAyNDIySC5wbmciLCJpYXQiOjE3MDUwNzg2OTMsImV4cCI6MTczNjYxNDY5M30.Nf8ScO0nRBYf3FD1eFc52KCzWtF9LB6MqcBxwtwwa4k&t=2024-01-12T16%3A58%3A13.936Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_dell-P2422H.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19kZWxsLVAyNDIySC5wbmciLCJpYXQiOjE3MDUwNzg2OTMsImV4cCI6MTczNjYxNDY5M30.Nf8ScO0nRBYf3FD1eFc52KCzWtF9LB6MqcBxwtwwa4k&t=2024-01-12T16%3A58%3A13.936Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_dell-P2422H.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9kZWxsLVAyNDIySC5wbmciLCJpYXQiOjE3MDUwNzg0OTIsImV4cCI6MTczNjYxNDQ5Mn0.U3BvvokJRmMx2xn2VP62y6GWf0qYkb1gkFwy80tq_Vg&t=2024-01-12T16%3A54%3A52.556Z',
         ],
         basePrice: 2000,
         categoryId: monitorsCategory.id,
@@ -454,10 +459,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-P2723QE.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-P2723QE.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-P2723QE.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-P2723QE.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_dell-P2723QE.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9kZWxsLVAyNzIzUUUucG5nIiwiaWF0IjoxNzA1MDc4NzQwLCJleHAiOjE3MzY2MTQ3NDB9.wDNC1sCbogy-Qg7PtaEx3yM14s2ydEsZX8khxrwuYrM&t=2024-01-12T16%3A59%3A01.161Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_dell-P2723QE.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9kZWxsLVAyNzIzUUUucG5nIiwiaWF0IjoxNzA1MDc4NzU4LCJleHAiOjE3MzY2MTQ3NTh9.RBx9dwC9feYDjJR5wefpUtAXu2WZQmQKPwJyZBRi3A8&t=2024-01-12T16%3A59%3A18.333Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_dell-P2723QE.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19kZWxsLVAyNzIzUUUucG5nIiwiaWF0IjoxNzA1MDc4Nzg0LCJleHAiOjE3MzY2MTQ3ODR9.rxZDZnEumgNmj8kS56sI7-8KKsl4gE9VJpwyH6JO-Kc&t=2024-01-12T16%3A59%3A44.575Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_dell-P2723QE.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9kZWxsLVAyNzIzUUUucG5nIiwiaWF0IjoxNzA1MDc4ODAyLCJleHAiOjE3MzY2MTQ4MDJ9.1cSUuQf9OXPLuaSeCTVd1x9xTLwvgZkyLSaebbHVR84&t=2024-01-12T17%3A00%3A03.021Z',
         ],
         basePrice: 2500,
         categoryId: monitorsCategory.id,
@@ -469,10 +474,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-S3422DWG.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-S3422DWG.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-S3422DWG.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-S3422DWG.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_dell-S3422DWG.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9kZWxsLVMzNDIyRFdHLnBuZyIsImlhdCI6MTcwNTA3ODg3OSwiZXhwIjoxNzM2NjE0ODc5fQ.mzbGhRWWl3rVE0QchIIfCZhIt3zPNp7F63UGm0gbVTY&t=2024-01-12T17%3A01%3A19.920Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_dell-S3422DWG.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9kZWxsLVMzNDIyRFdHLnBuZyIsImlhdCI6MTcwNTA3ODg2MywiZXhwIjoxNzM2NjE0ODYzfQ.JQTElDezu7WBta-xF0_fXvo4ouXTLmRUtVZ75M2gUMo&t=2024-01-12T17%3A01%3A03.979Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_dell-S3422DWG.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19kZWxsLVMzNDIyRFdHLnBuZyIsImlhdCI6MTcwNTA3ODgzOSwiZXhwIjoxNzM2NjE0ODM5fQ.t-xgkPz-T9K9V0atcPMi97EZCeX7wQsVDc75KqUdXo4&t=2024-01-12T17%3A00%3A39.842Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_dell-S3422DWG.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9kZWxsLVMzNDIyRFdHLnBuZyIsImlhdCI6MTcwNTA3ODgyMCwiZXhwIjoxNzM2NjE0ODIwfQ.8isaz30d-oZ-UXwf2iQivKS_S8-AgDotcL-mk9MltAc&t=2024-01-12T17%3A00%3A20.857Z',
         ],
         basePrice: 3200,
         categoryId: monitorsCategory.id,
@@ -484,10 +489,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-S3222DGM.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-S3222DGM.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-S3222DGM.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-S3222DGM.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_dell-S3222DGM.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9kZWxsLVMzMjIyREdNLnBuZyIsImlhdCI6MTcwNTA3ODkxMCwiZXhwIjoxNzM2NjE0OTEwfQ.PkAPENMQWSEe_jvG_AQrzSW0BjkC14yAah9_NSHluGA&t=2024-01-12T17%3A01%3A50.928Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_dell-S3222DGM.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9kZWxsLVMzMjIyREdNLnBuZyIsImlhdCI6MTcwNTA3ODkyNywiZXhwIjoxNzM2NjE0OTI3fQ.HdyqaerOMxpshVjTwFK9QqL7syD2nV0mg6wr_EulXoo&t=2024-01-12T17%3A02%3A08.091Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_dell-S3222DGM.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19kZWxsLVMzMjIyREdNLnBuZyIsImlhdCI6MTcwNTA3ODk0NiwiZXhwIjoxNzM2NjE0OTQ2fQ.LvmmkBzlO5Ufycgt55w6RTc1ZXzpIOtMW6bntbA0daY&t=2024-01-12T17%3A02%3A26.916Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_dell-S3222DGM.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9kZWxsLVMzMjIyREdNLnBuZyIsImlhdCI6MTcwNTA3ODk2NSwiZXhwIjoxNzM2NjE0OTY1fQ.shlzPrE7iQtgdnBabZOW82kjMwASSZrB6EUkac6gKWQ&t=2024-01-12T17%3A02%3A45.416Z',
         ],
         basePrice: 3500,
         categoryId: monitorsCategory.id,
@@ -499,10 +504,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-AW2524HF.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-AW2524HF.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-AW2524HF.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-AW2524HF.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_dell-AW2524HF.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9kZWxsLUFXMjUyNEhGLnBuZyIsImlhdCI6MTcwNTA3OTA2OCwiZXhwIjoxNzM2NjE1MDY4fQ.okNlps0zkKTiBUL8j4Lujaro31bf1IAlM8kugK2kbQw&t=2024-01-12T17%3A04%3A28.743Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_dell-AW2524HF.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9kZWxsLUFXMjUyNEhGLnBuZyIsImlhdCI6MTcwNTA3OTA1MywiZXhwIjoxNzM2NjE1MDUzfQ.kjaaO8zPc_mTB0qfhylfoqKoO5YCEZ8ZImDZSH4Reqs&t=2024-01-12T17%3A04%3A13.346Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_dell-AW2524HF.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19kZWxsLUFXMjUyNEhGLnBuZyIsImlhdCI6MTcwNTA3OTAzMywiZXhwIjoxNzM2NjE1MDMzfQ.GKcPWPeGfsZrrBC8iG2eA7POXilQJstsvm2mV5cXCgo&t=2024-01-12T17%3A03%3A53.585Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_dell-AW2524HF.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9kZWxsLUFXMjUyNEhGLnBuZyIsImlhdCI6MTcwNTA3OTAxNiwiZXhwIjoxNzM2NjE1MDE2fQ.WEL8qMP-hWhGx_P0eiLHOaopd7B72cR3MiCWSEwjUjk&t=2024-01-12T17%3A03%3A36.838Z',
         ],
         basePrice: 4200,
         categoryId: monitorsCategory.id,
@@ -518,7 +523,8 @@ async function main() {
       data: {
         name: 'Speakers',
         slug: 'speakers',
-        imageUrl: 'https://fsw-store.s3.sa-east-1.amazonaws.com/speakers.png',
+        imageUrl:
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
       },
     })
 
@@ -529,10 +535,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-surround-z607.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-surround-z607.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-surround-z607.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-surround-z607.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_logi-surround-z607.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9sb2dpLXN1cnJvdW5kLXo2MDcucG5nIiwiaWF0IjoxNzA1MDc5MDk4LCJleHAiOjE3MzY2MTUwOTh9.BKEyIBJaLkPThZrTAkG2XU6RT5MHAPhgBvlCXQI5hVA&t=2024-01-12T17%3A04%3A59.243Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_logi-surround-z607.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9sb2dpLXN1cnJvdW5kLXo2MDcucG5nIiwiaWF0IjoxNzA1MDc5MTE5LCJleHAiOjE3MzY2MTUxMTl9.efXZ31_RTCWDJVLzSa7KKWOLk3zSnllKi3_SH9hXVws&t=2024-01-12T17%3A05%3A19.740Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_logi-surround-z607.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19sb2dpLXN1cnJvdW5kLXo2MDcucG5nIiwiaWF0IjoxNzA1MDc5MTUwLCJleHAiOjE3MzY2MTUxNTB9.95lYvJ5v0zO-LTAwm7AohUvaShJxgVgSexxTSlbORP4&t=2024-01-12T17%3A05%3A50.381Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_logi-surround-z607.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9sb2dpLXN1cnJvdW5kLXo2MDcucG5nIiwiaWF0IjoxNzA1MDc5MTY2LCJleHAiOjE3MzY2MTUxNjZ9.1cnhLHDnUiMmLeijD_6FxZ4Ew0KT9-QYqDcx1vCuOeE&t=2024-01-12T17%3A06%3A07.121Z',
         ],
         basePrice: 1200,
         categoryId: speakersCategory.id,
@@ -544,10 +550,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-dock.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-dock.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-dock.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-dock.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_logi-dock.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9sb2dpLWRvY2sucG5nIiwiaWF0IjoxNzA1MDc5MjYyLCJleHAiOjE3MzY2MTUyNjJ9.9MS5tuW4qoN7JkqoMV_toVk-a-w7FCr2oQ43cgo2sPA&t=2024-01-12T17%3A07%3A43.153Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_logi-dock.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9sb2dpLWRvY2sucG5nIiwiaWF0IjoxNzA1MDc5MjQ2LCJleHAiOjE3MzY2MTUyNDZ9.XsTQh33YVouz677okcMD4jzyVM2ZMb_f_TyRscR1RwE&t=2024-01-12T17%3A07%3A26.541Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_logi-dock.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19sb2dpLWRvY2sucG5nIiwiaWF0IjoxNzA1MDc5MjI4LCJleHAiOjE3MzY2MTUyMjh9.qlS4myO7NFgv8xW-kjJ_l9u9ifoKwsw5xlg6gbqMKbM&t=2024-01-12T17%3A07%3A08.704Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_logi-dock.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9sb2dpLWRvY2sucG5nIiwiaWF0IjoxNzA1MDc5MjA2LCJleHAiOjE3MzY2MTUyMDZ9.v4keyDMyfzb4tmBSPEb2s0nbmM_npD0mFgsEARjGdM8&t=2024-01-12T17%3A06%3A46.413Z',
         ],
         basePrice: 4500,
         categoryId: speakersCategory.id,
@@ -559,10 +565,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_sony-SA-Z9R.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_sony-SA-Z9R.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_sony-SA-Z9R.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_sony-SA-Z9R.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_sony-SA-Z9R.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9zb255LVNBLVo5Ui5wbmciLCJpYXQiOjE3MDUwNzkyODcsImV4cCI6MTczNjYxNTI4N30.V3sytH_-vQjOIUeV9J4Wk4gDZsBB0so0-MLq88w3Aqs&t=2024-01-12T17%3A08%3A07.676Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_sony-SA-Z9R.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9zb255LVNBLVo5Ui5wbmciLCJpYXQiOjE3MDUwNzkyODcsImV4cCI6MTczNjYxNTI4N30.V3sytH_-vQjOIUeV9J4Wk4gDZsBB0so0-MLq88w3Aqs&t=2024-01-12T17%3A08%3A07.676Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_sony-SA-Z9R.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19zb255LVNBLVo5Ui5wbmciLCJpYXQiOjE3MDUwNzkzMzIsImV4cCI6MTczNjYxNTMzMn0.m-ByC8pPSZ-aaiCdEfAFP_lkIg0UcTcgpvgYpyYt1Ow&t=2024-01-12T17%3A08%3A52.500Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_sony-SA-Z9R.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9zb255LVNBLVo5Ui5wbmciLCJpYXQiOjE3MDUwNzkzNDcsImV4cCI6MTczNjYxNTM0N30.J-XIUV5peDMOk8m9Xi964mfPqYjS8wWGk1-Y5TToDW0&t=2024-01-12T17%3A09%3A07.647Z',
         ],
         basePrice: 4000,
         categoryId: speakersCategory.id,
@@ -574,10 +580,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_sony-extra-bass.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_sony-extra-bass.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_sony-extra-bass.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_sony-extra-bass.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_sony-extra-bass.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9zb255LWV4dHJhLWJhc3MucG5nIiwiaWF0IjoxNzA1MDc5ODc3LCJleHAiOjE3MzY2MTU4Nzd9.yzyJA5A25-u1d3SMlumNwg-JcxFIXisA87Hnsh5h5VA&t=2024-01-12T17%3A17%3A57.448Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_sony-extra-bass.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9zb255LWV4dHJhLWJhc3MucG5nIiwiaWF0IjoxNzA1MDc5ODc3LCJleHAiOjE3MzY2MTU4Nzd9.yzyJA5A25-u1d3SMlumNwg-JcxFIXisA87Hnsh5h5VA&t=2024-01-12T17%3A17%3A57.448Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_sony-extra-bass.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19zb255LWV4dHJhLWJhc3MucG5nIiwiaWF0IjoxNzA1MDc5OTMwLCJleHAiOjE3MzY2MTU5MzB9.2Cl8xfWflbRGScA0s-SiRRBF-MgUU-WQGpP2IyEzF4k&t=2024-01-12T17%3A18%3A51.221Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_sony-extra-bass.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9zb255LWV4dHJhLWJhc3MucG5nIiwiaWF0IjoxNzA1MDc5OTUxLCJleHAiOjE3MzY2MTU5NTF9.0Mpf5FlYGpX5q0DWy1KxVNIT8PotpAj_amTFUFU4vCE&t=2024-01-12T17%3A19%3A11.331Z',
         ],
         basePrice: 3200,
         categoryId: speakersCategory.id,
@@ -589,10 +595,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_sony-XB23.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_sony-XB23.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_sony-XB23.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_sony-XB23.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_sony-XB23.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9zb255LVhCMjMucG5nIiwiaWF0IjoxNzA1MDc5NTE3LCJleHAiOjE3MzY2MTU1MTd9.lC_DZP27Db1hDqzDGFVGzZd9Igx6Q3GOFufU9A8uhgs&t=2024-01-12T17%3A11%3A57.935Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_sony-XB23.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9zb255LVhCMjMucG5nIiwiaWF0IjoxNzA1MDc5NDE5LCJleHAiOjE3MzY2MTU0MTl9.4bffP61gtqJi83hlRXPHW7Rh568oJKpGqilQvAcTIVg&t=2024-01-12T17%3A10%3A19.571Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_sony-XB23.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19zb255LVhCMjMucG5nIiwiaWF0IjoxNzA1MDc5NDAxLCJleHAiOjE3MzY2MTU0MDF9.dh2wBFValn96nLUyM1Hw7HrLifHDkXDY2OOZky3Cx9s&t=2024-01-12T17%3A10%3A01.742Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_sony-XB23.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9zb255LVhCMjMucG5nIiwiaWF0IjoxNzA1MDc5Mzg2LCJleHAiOjE3MzY2MTUzODZ9.6HYtpVAkeezoC6unsy3ANCV51eJA4Rt4sJLgjCQk_6I&t=2024-01-12T17%3A09%3A47.008Z',
         ],
         basePrice: 3500,
         categoryId: speakersCategory.id,
@@ -604,10 +610,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_sony-S200F.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_sony-S200F.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_sony-S200F.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_sony-S200F.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_sony-S200F.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9zb255LVMyMDBGLnBuZyIsImlhdCI6MTcwNTA3OTY4OCwiZXhwIjoxNzM2NjE1Njg4fQ.yOBeoHFOj69l1_ed_zohf3SCRSK28cwlJO5SS1yURUA&t=2024-01-12T17%3A14%3A48.907Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_sony-S200F.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9zb255LVMyMDBGLnBuZyIsImlhdCI6MTcwNTA3OTY2NiwiZXhwIjoxNzM2NjE1NjY2fQ.GsrL2kG_v73HleTbnqykZ0lmc7MM1D7xZ8wVjbRM4wc&t=2024-01-12T17%3A14%3A26.635Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_sony-S200F.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19zb255LVMyMDBGLnBuZyIsImlhdCI6MTcwNTA3OTYyMywiZXhwIjoxNzM2NjE1NjIzfQ.7fSx_zI7KcdnetpSb_B-kdpxYP3j5HBhP7KyG7v1KQI&t=2024-01-12T17%3A13%3A43.837Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_sony-S200F.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9zb255LVMyMDBGLnBuZyIsImlhdCI6MTcwNTA3OTYwNSwiZXhwIjoxNzM2NjE1NjA1fQ.KT2itXzya2IoUfOFwoYJqbS_Hl4zxnh1Wx7AMta8Yto&t=2024-01-12T17%3A13%3A25.825Z',
         ],
         basePrice: 2500,
         categoryId: speakersCategory.id,
