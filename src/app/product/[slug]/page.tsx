@@ -27,14 +27,13 @@ export default async function Product({ params }: ProductProps) {
   )
   return (
     <main>
-      <section className="lg:flex lg:justify-between lg:px-24">
-        <div>
-          <ProductImages
-            imageUrls={product[0].imageUrls}
-            productName={product[0].name}
-          />
-        </div>
-        <div className="mt-8 w-[450px] px-5 lg:mt-0 lg:bg-secondary lg:p-10 ">
+      <section className="lg:flex lg:justify-between lg:gap-8 lg:p-10 lg:px-24">
+        <ProductImages
+          imageUrls={product[0].imageUrls}
+          productName={product[0].name}
+        />
+
+        <div className="mt-8 rounded-lg px-5 lg:mt-0 lg:w-[450px] lg:bg-secondary lg:p-4 ">
           <h1 className="text-lg">Logitech MX Master 3s</h1>
           <span className="text-xs text-primary">Disponível em estoque </span>
           <div className="flex items-center gap-2">
