@@ -19,10 +19,10 @@ async function main() {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.',
         imageUrls: [
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/01_mx-master-3s.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/02_mx-master-3s.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/03_mx-master-3s.png',
-          'https://fsw-store.s3.sa-east-1.amazonaws.com/04_mx-master-3s.png',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/01_mx-master-3s.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMV9teC1tYXN0ZXItM3MucG5nIiwiaWF0IjoxNzA1MDEyMzM1LCJleHAiOjE3MzY1NDgzMzV9.tjygPp5r-hqMJZ96EgRS8TL49zdxvoO10LYGx-xATLY&t=2024-01-11T22%3A32%3A15.229Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/02_mx-master-3s.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wMl9teC1tYXN0ZXItM3MucG5nIiwiaWF0IjoxNzA1MDEyNDA1LCJleHAiOjE3MzY1NDg0MDV9.o2uk_Q9ojgWAl7mIwWWA78goddzBk6CPSjkELnTKh_U&t=2024-01-11T22%3A33%3A25.649Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/03_mx-master-3s.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wM19teC1tYXN0ZXItM3MucG5nIiwiaWF0IjoxNzA1MDE3MDE1LCJleHAiOjE3MzY1NTMwMTV9.v90A5vVZCTeYosRc-G-jnZ943N-WTC4DtvWXyrvsWPQ&t=2024-01-11T23%3A50%3A16.044Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/04_mx-master-3s.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy8wNF9teC1tYXN0ZXItM3MucG5nIiwiaWF0IjoxNzA1MDE3MDkxLCJleHAiOjE3MzY1NTMwOTF9.Ah6_qi3kWgO9GoZGrvgnywFldWq06XHDjPvmeuglF9k&t=2024-01-11T23%3A51%3A31.948Z',
         ],
         basePrice: 650,
         categoryId: mousesCategory.id,
