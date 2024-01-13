@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { ButtonCategory } from './components/ButtonCategory'
-import { ProductList } from './components/ProductList'
+import { ProductList } from '../../components/ProductList'
 import { getDataPrisma } from '../../../prisma/utils/dataPrisma'
 
 export default async function Home() {

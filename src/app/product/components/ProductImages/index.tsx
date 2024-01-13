@@ -22,7 +22,7 @@ export const ProductImages = ({
     <div className="  lg:relative lg:flex-1 lg:rounded-2xl lg:bg-accent ">
       <div className="flex h-96 items-center justify-center rounded-b-2xl bg-accent lg:h-full">
         <Image
-          className="lg:w-4/5"
+          className="lg:w-1/2"
           src={imageUrl}
           alt={productName}
           height={200}
@@ -34,7 +34,7 @@ export const ProductImages = ({
         {imageUrls.map((image) => (
           <button
             key={productName}
-            className={`flex h-20  w-20 items-center justify-center rounded-sm bg-accent lg:rounded-md lg:bg-black${
+            className={`flex h-20  w-20 items-center justify-center rounded-sm bg-accent lg:rounded-md lg:bg-black ${
               imageUrl === image ? 'border-2 border-primary' : ''
             }`}
             onClick={() => selectImageProduct(image)}

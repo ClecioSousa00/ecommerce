@@ -8,7 +8,7 @@ import {
   User,
 } from 'lucide-react'
 import { Button, buttonVariants } from '../ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from '../ui/sheet'
 import Link from 'next/link'
 
 export const Header = () => {
@@ -30,24 +30,28 @@ export const Header = () => {
           <SheetContent side={'left'} data-testid="menu-content">
             <ul className="mt-6 space-y-2 font-bold">
               <li>
-                <Link
-                  href={'/'}
-                  className={`${buttonVariants({
-                    variant: 'outline',
-                  })} w-full gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14`}
-                >
-                  <Home size={18} /> Início
-                </Link>
+                <SheetClose asChild>
+                  <Link
+                    href={'/'}
+                    className={`${buttonVariants({
+                      variant: 'outline',
+                    })} w-full gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14`}
+                  >
+                    <Home size={18} /> Início
+                  </Link>
+                </SheetClose>
               </li>
               <li>
-                <Link
-                  href={'/'}
-                  className={`${buttonVariants({
-                    variant: 'outline',
-                  })} w-full gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14`}
-                >
-                  <ListOrdered size={18} /> Catálogo
-                </Link>
+                <SheetClose asChild>
+                  <Link
+                    href={'/catalog'}
+                    className={`${buttonVariants({
+                      variant: 'outline',
+                    })} w-full gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14`}
+                  >
+                    <ListOrdered size={18} /> Catálogo
+                  </Link>
+                </SheetClose>
               </li>
               <li>
                 <Link
