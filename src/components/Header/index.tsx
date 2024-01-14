@@ -86,8 +86,12 @@ export const Header = () => {
       </h1>
 
       <ul className=" hidden gap-6 font-bold lg:flex">
-        <li>Início</li>
-        <li>Catálogo</li>
+        <li>
+          <Link href={'/'}>Início</Link>
+        </li>
+        <li>
+          <Link href={'/catalog'}>Catálogo</Link>
+        </li>
         <li>Ofertas</li>
       </ul>
 

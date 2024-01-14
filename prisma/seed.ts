@@ -100,7 +100,7 @@ async function main() {
         name: 'Teclados',
         slug: 'keyboards',
         imageUrl:
-          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/keyboards.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9rZXlib2FyZHMucG5nIiwiaWF0IjoxNzA1MjY3MjQ2LCJleHAiOjE3MzY4MDMyNDZ9.bmjMMOaTvFLV6KtUcGKxvS4C7v_JZ9ea-oPWwX3PNk0&t=2024-01-14T21%3A20%3A46.542Z',
       },
     })
 
@@ -206,7 +206,7 @@ async function main() {
         name: 'Fones',
         slug: 'headphones',
         imageUrl:
-          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/headphoes.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9oZWFkcGhvZXMucG5nIiwiaWF0IjoxNzA1MjY3NDI1LCJleHAiOjE3MzY4MDM0MjV9.GlZEfAEiZUZGtdN2aAntOgBsxPJUWLKWZSORoAoWE7E&t=2024-01-14T21%3A23%3A45.445Z',
       },
     })
 
@@ -312,7 +312,7 @@ async function main() {
         name: 'Mousepads',
         slug: 'mousepads',
         imageUrl:
-          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mousepads.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXBhZHMucG5nIiwiaWF0IjoxNzA1MjY3NDAzLCJleHAiOjE3MzY4MDM0MDN9.yfxHqoAi9MDhWrwxeAIGpcJGjIWwxiEoUZc_-1lNekw&t=2024-01-14T21%3A23%3A24.111Z',
       },
     })
 
@@ -418,7 +418,7 @@ async function main() {
         name: 'Monitores',
         slug: 'monitors',
         imageUrl:
-          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/monitor.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb25pdG9yLnBuZyIsImlhdCI6MTcwNTI2NzMyMywiZXhwIjoxNzM2ODAzMzIzfQ.fkv6njY9zovy0o1Z8Ygc2epw_ErSEag49ieSPxwtisE&t=2024-01-14T21%3A22%3A03.300Z',
       },
     })
 
@@ -524,7 +524,7 @@ async function main() {
         name: 'Speakers',
         slug: 'speakers',
         imageUrl:
-          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/mouses.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9tb3VzZXMucG5nIiwiaWF0IjoxNzA1MDgwMjM4LCJleHAiOjE3MzY2MTYyMzh9.SrXhXRgHvfrASpL2hZ_ZQPupQk-KJaUTZ2pHmAShk6w&t=2024-01-12T17%3A23%3A58.452Z',
+          'https://hoasmkbmqluqonimxyqo.supabase.co/storage/v1/object/sign/product-images/speakers.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0LWltYWdlcy9zcGVha2Vycy5wbmciLCJpYXQiOjE3MDUyNjczNjMsImV4cCI6MTczNjgwMzM2M30.3ZbCZW4YLRtsrlG_FOqS127xSp1QdMlZ6L0o93iTsE0&t=2024-01-14T21%3A22%3A44.030Z',
       },
     })
 
