@@ -50,9 +50,11 @@ export const ProductItem = ({ product }: ProductItemProps) => {
           )}
         </div>
         <div className="flex gap-1 ">
-          <StarIcon size={12} />
-          <StarIcon size={12} />
-          <StarIcon size={12} />
+          <StarIcon size={12} color="#4F32C3" fill="#4F32C3" />
+          <StarIcon size={12} color="#4F32C3" fill="#4F32C3" />
+          <StarIcon size={12} color="#4F32C3" fill="#4F32C3" />
+          <StarIcon size={12} color="#4F32C3" fill="#4F32C3" />
+          <StarIcon size={12} color="#4F32C3" />
         </div>
       </div>
     </Link>

@@ -10,6 +10,8 @@ import {
 import { Button, buttonVariants } from '../ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '../ui/sheet'
 import Link from 'next/link'
+import { CartMenu } from '../CartMenu'
+import { CartItem } from '../CartMenu/CartItem'
 
 export const Header = () => {
   return (
@@ -103,6 +105,7 @@ export const Header = () => {
         >
           <User size={18} color="white" />
         </Button>
+
         <Sheet>
           <SheetTrigger asChild>
             <Button
@@ -115,7 +118,7 @@ export const Header = () => {
             </Button>
           </SheetTrigger>
           <SheetContent>
-            <h1>menu cart</h1>
+            <CartMenu />
           </SheetContent>
         </Sheet>
       </div>
