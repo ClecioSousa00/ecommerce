@@ -30,7 +30,7 @@ export default async function Category({ params }: CategoryProps) {
   const icon = CATEGORY_ICON[params.slug as keyof typeof CATEGORY_ICON]
 
   return (
-    <main className="px-8 pb-8 lg:px-24">
+    <main className="px-8 py-8 lg:px-24">
       <section>
         {/* <Badge
           className="mt-8 gap-1 border-primary px-3 py-1"

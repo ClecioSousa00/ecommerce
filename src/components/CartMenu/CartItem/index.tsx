@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export const CartItem = () => {
   return (
-    <div className="flex gap-2 ">
+    <div className="flex items-center gap-2">
       <div
         className={`flex h-20  w-20 items-center justify-center rounded-sm bg-accent lg:rounded-md lg:bg-black `}
       >
@@ -26,15 +26,15 @@ export const CartItem = () => {
           </h3>
           <div>
             <strong className="font-medium">R$ 467,93</strong>
-            <span className=" ml-1 text-xs line-through opacity-75">
+            <span className=" ml-1 text-xs line-through opacity-75 lg:text-sm">
               R$ R$ 467,93
             </span>
           </div>
         </div>
         <CounterProduct />
       </div>
-      <Button variant={'outline'}>
-        <Trash size={18} />
+      <Button variant={'outline'} size={'icon'} className="h-8 w-8 ">
+        <Trash size={16} />
       </Button>
     </div>
   )

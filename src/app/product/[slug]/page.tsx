@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { TruckIcon } from '@/iconsSvg/TruckIcon'
 import { ProductList } from '@/components/ProductList'
+import { ProductInfo } from '../components/ProductInfo'
 
 type ProductProps = {
   params: {
@@ -36,60 +37,23 @@ export default async function Product({ params }: ProductProps) {
 
   if (!product) return null
 
-  console.log(product)
   const newPriceWithDiscount = calculatePriceWithDiscount(
     Number(product.basePrice),
     product.discountPercentage,
   )
   return (
-    <main>
-      <section className="lg:flex lg:justify-between lg:gap-8 lg:p-10 lg:px-24">
+    <main className="lg:px-24 lg:py-10">
+      <section className="lg:flex lg:justify-center lg:gap-8 ">
         <ProductImages
           imageUrls={product.imageUrls}
           productName={product.name}
         />
 
-        <div className="mt-8 rounded-lg px-5 lg:mt-0 lg:w-[450px] lg:bg-secondary lg:p-4 ">
-          <h1 className="text-lg">Logitech MX Master 3s</h1>
-          <span className="text-xs text-primary">Disponível em estoque </span>
-          <div className="flex items-center gap-2">
-            <div className="flex gap-1">
-              <StarIcon size={12} />
-              <StarIcon size={12} />
-              <StarIcon size={12} />
-              <StarIcon size={12} />
-              <StarIcon size={12} />
-            </div>
-            <span className="text-xs text-secondary-foreground/30">
-              (25) avaliações
-            </span>
-          </div>
-          <div className="mb-4">
-            <div className="flex items-center gap-2">
-              <strong className="text-2xl">{newPriceWithDiscount}</strong>
-              {!!product.discountPercentage && (
-                <Badge>
-                  <ArrowDown size={14} />
-                  <span className="text-xs font-bold">
-                    {product.discountPercentage}%
-                  </span>
-                </Badge>
-              )}
-            </div>
-            {!!product.discountPercentage && (
-              <span className="text-secondary-foreground/30  line-through ">
-                De: R$ {Number(product.basePrice)}
-              </span>
-            )}
-          </div>
-          <CounterProduct />
-          <h3 className="mb-2 mt-8 text-sm font-bold">Descrição</h3>
-          <p className="mb-8 text-justify text-xs text-secondary-foreground/30">
-            {product.description}
-          </p>
-          <Button className="w-full rounded-lg bg-primary text-sm font-bold uppercase">
-            adicionar ao carrinho
-          </Button>
+        <div className="mt-8 rounded-lg px-5 lg:mt-0   lg:w-[450px] lg:bg-secondary lg:p-6 ">
+          <ProductInfo
+            product={product}
+            newPriceWithDiscount={newPriceWithDiscount}
+          />
           <div className="mt-5 flex h-14 w-full items-center justify-between rounded-lg bg-secondary-foreground/10 px-5 py-2">
             <div className="flex items-center gap-3">
               <TruckIcon />

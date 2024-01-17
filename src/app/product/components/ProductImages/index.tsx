@@ -19,14 +19,15 @@ export const ProductImages = ({
   }
 
   return (
-    <div className="  overflow-hidden lg:relative lg:flex-1 lg:rounded-2xl lg:bg-accent ">
-      <div className="flex h-96 items-center justify-center rounded-b-2xl bg-accent lg:h-full">
+    <div className=" overflow-hidden lg:relative  lg:flex-1   lg:rounded-2xl lg:bg-accent ">
+      <div className="flex  h-96 items-center justify-center rounded-b-2xl bg-accent  ">
         <Image
-          className="lg:w-1/2"
+          className="h-auto max-h-[70%] w-auto max-w-[80%]"
           src={imageUrl}
           alt={productName}
-          height={200}
-          width={270}
+          height={0}
+          width={0}
+          unoptimized
         />
       </div>
 
