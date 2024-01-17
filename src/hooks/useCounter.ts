@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-export const UseCounter = () => {
-  const [quantity, setQuantity] = useState(0)
+export const UseCounter = (quantityProduct = 0) => {
+  const [quantity, setQuantity] = useState(quantityProduct)
 
   const handleIncrement = () => {
     setQuantity((prevState) => prevState + 1)

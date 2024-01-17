@@ -3,8 +3,17 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '../ui/button'
 import { UseCounter } from '@/hooks/useCounter'
 
-export const CounterProduct = () => {
-  const { quantity, handleIncrement, handleDecrement } = UseCounter()
+type CounterProductProps = {
+  quantity: number
+  handleDecrement: () => void
+  handleIncrement: () => void
+}
+
+export const CounterProduct = ({
+  quantity,
+  handleDecrement,
+  handleIncrement,
+}: CounterProductProps) => {
   return (
     <div className="flex items-center gap-2 ">
       <Button

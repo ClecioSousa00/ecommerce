@@ -1,11 +1,15 @@
+'use client'
+
 import { Button } from '../ui/button'
 import { ShoppingCart } from 'lucide-react'
 import { BadgeCategory } from '../BadgeCategory'
 import { CartItem } from './CartItem'
 import { ScrollArea } from '../ui/scroll-area'
 import { Separator } from '../ui/separator'
+import { useCartContext } from '@/context/contextProducts'
 
 export const CartMenu = () => {
+  const { products } = useCartContext()
   return (
     <div className="flex h-full flex-col items-start">
       <BadgeCategory name="carrinho">
@@ -13,7 +17,9 @@ export const CartMenu = () => {
       </BadgeCategory>
       <ScrollArea className="h-full w-full ">
         <div className="mt-8 space-y-4 ">
-          <CartItem />
+          {products.length > 0 &&
+            products.map((product) => <CartItem key={product.id} />)}
+          {/* <CartItem /> */}
         </div>
       </ScrollArea>
       <div className="w-full">
