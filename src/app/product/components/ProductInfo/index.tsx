@@ -5,25 +5,33 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { useCartContext } from '@/context/contextProducts'
 import { UseCounter } from '@/hooks/useCounter'
+import { saveProductInStorage } from '@/storage/saveProductInStorage'
+import { calculatePriceWithDiscount } from '@/utils/calculatePriceWithDiscount'
 import { Product } from '@prisma/client'
 import { ArrowDown, StarIcon } from 'lucide-react'
-import { useState } from 'react'
 
 type ProductInfoProps = {
   product: Product
-  newPriceWithDiscount: string
 }
 
-export const ProductInfo = ({
-  product,
-  newPriceWithDiscount,
-}: ProductInfoProps) => {
+export const ProductInfo = ({ product }: ProductInfoProps) => {
   const { quantity, handleIncrement, handleDecrement } = UseCounter()
   const { addProductCart } = useCartContext()
 
-  const handleAddProductToCart = () => {
+  const handleAddProductToCartAndStorage = () => {
     addProductCart({ ...product, quantity })
+    saveProductInStorage({ ...product, quantity })
   }
+
+  const priceProductWithQuantity =
+    quantity > 0
+      ? quantity * Number(product.basePrice)
+      : Number(product.basePrice)
+
+  const newPriceWithDiscount = calculatePriceWithDiscount(
+    priceProductWithQuantity,
+    product.discountPercentage,
+  )
 
   return (
     <>
@@ -55,7 +63,7 @@ export const ProductInfo = ({
         </div>
         {!!product.discountPercentage && (
           <span className="text-secondary-foreground/30  line-through ">
-            De: R$ {Number(product.basePrice)}
+            De: R$ {priceProductWithQuantity}
           </span>
         )}
       </div>
@@ -69,11 +77,8 @@ export const ProductInfo = ({
         {product.description}
       </p>
       <Button
-        disabled={!quantity}
-        onClick={() => handleAddProductToCart()}
-        className={`w-full rounded-lg bg-primary text-sm font-bold uppercase ${
-          !quantity && 'cursor-not-allowed bg-primary/25'
-        }`}
+        onClick={() => handleAddProductToCartAndStorage()}
+        className="w-full rounded-lg bg-primary text-sm font-bold uppercase"
       >
         adicionar ao carrinho
       </Button>

@@ -37,10 +37,6 @@ export default async function Product({ params }: ProductProps) {
 
   if (!product) return null
 
-  const newPriceWithDiscount = calculatePriceWithDiscount(
-    Number(product.basePrice),
-    product.discountPercentage,
-  )
   return (
     <main className="lg:px-24 lg:py-10">
       <section className="lg:flex lg:justify-center lg:gap-8 ">
@@ -50,10 +46,7 @@ export default async function Product({ params }: ProductProps) {
         />
 
         <div className="mt-8 rounded-lg px-5 lg:mt-0   lg:w-[450px] lg:bg-secondary lg:p-6 ">
-          <ProductInfo
-            product={product}
-            newPriceWithDiscount={newPriceWithDiscount}
-          />
+          <ProductInfo product={product} />
           <div className="mt-5 flex h-14 w-full items-center justify-between rounded-lg bg-secondary-foreground/10 px-5 py-2">
             <div className="flex items-center gap-3">
               <TruckIcon />

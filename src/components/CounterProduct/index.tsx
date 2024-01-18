@@ -1,7 +1,6 @@
 'use client'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '../ui/button'
-import { UseCounter } from '@/hooks/useCounter'
 
 type CounterProductProps = {
   quantity: number
@@ -17,6 +16,7 @@ export const CounterProduct = ({
   return (
     <div className="flex items-center gap-2 ">
       <Button
+        disabled={quantity === 1}
         className="h-8 w-8"
         variant={'outline'}
         size={'icon'}
