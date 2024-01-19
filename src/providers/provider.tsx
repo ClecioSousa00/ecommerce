@@ -2,7 +2,12 @@
 
 import { CartProvider } from '@/context/contextProducts'
 import { ReactNode } from 'react'
+import { AuthProvider } from './auth'
 
 export const Providers = ({ children }: { children: ReactNode }) => {
-  return <CartProvider>{children}</CartProvider>
+  return (
+    <AuthProvider>
+      <CartProvider>{children}</CartProvider>
+    </AuthProvider>
+  )
 }

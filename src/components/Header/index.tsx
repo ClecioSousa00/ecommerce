@@ -1,19 +1,39 @@
+'use client'
+
 import {
   Home,
   ListOrdered,
   LogIn,
+  LogOut,
   Menu,
   PercentIcon,
   ShoppingCart,
   User,
 } from 'lucide-react'
 import { Button, buttonVariants } from '../ui/button'
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from '../ui/sheet'
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from '../ui/sheet'
 import Link from 'next/link'
 import { CartMenu } from '../CartMenu'
-import { CartItem } from '../CartMenu/CartItem'
+import { signIn, signOut, useSession } from 'next-auth/react'
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
+import { Separator } from '../ui/separator'
 
 export const Header = () => {
+  const { status, data } = useSession()
+
+  const handleLogin = async () => {
+    await signIn()
+  }
+  const handleLogOut = async () => {
+    await signOut()
+  }
+
   return (
     <header className="flex items-center justify-between  border-b-2 border-gray-400/20 p-8 lg:px-24 lg:py-10">
       <div className="md:hidden">
@@ -30,6 +50,21 @@ export const Header = () => {
             </Button>
           </SheetTrigger>
           <SheetContent side={'left'} data-testid="menu-content">
+            <SheetHeader className="mb-4 text-left text-lg font-medium">
+              Menu
+            </SheetHeader>
+            {status === 'authenticated' && data?.user && (
+              <div className="flex items-center gap-2">
+                <Avatar>
+                  <AvatarFallback>
+                    {data.user.name?.[0].toUpperCase()}
+                  </AvatarFallback>
+                  {data.user.image && <AvatarImage src={data.user.image} />}
+                </Avatar>
+                <p>{data.user.name}</p>
+              </div>
+            )}
+            <Separator className="my-4" />
             <ul className="mt-6 space-y-2 font-bold">
               <li>
                 <SheetClose asChild>
@@ -65,16 +100,28 @@ export const Header = () => {
                   <PercentIcon size={18} /> Ofertas
                 </Link>
               </li>
-              <li>
-                <Link
-                  href={'/'}
-                  className={`${buttonVariants({
-                    variant: 'outline',
-                  })} w-full  gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14`}
-                >
-                  <LogIn size={18} /> Fazer Login
-                </Link>
-              </li>
+              {status === 'unauthenticated' && (
+                <li>
+                  <Button
+                    className="w-full  gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14"
+                    variant={'outline'}
+                    onClick={handleLogin}
+                  >
+                    <LogIn size={18} /> Fazer Login
+                  </Button>
+                </li>
+              )}
+              {status === 'authenticated' && (
+                <li>
+                  <Button
+                    className="w-full  gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14"
+                    variant={'outline'}
+                    onClick={handleLogOut}
+                  >
+                    <LogOut size={18} /> Fazer LogOut
+                  </Button>
+                </li>
+              )}
             </ul>
           </SheetContent>
         </Sheet>
