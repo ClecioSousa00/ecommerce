@@ -21,8 +21,6 @@ export const CartItem = ({ product }: CartItemProps) => {
     priceProductWithQuantity,
   } = useCart(product)
 
-  // criar um utils do u reduce
-
   return (
     <div className="flex items-center gap-2">
       <div

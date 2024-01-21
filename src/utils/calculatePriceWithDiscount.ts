@@ -13,8 +13,8 @@ export const calculatePriceWithDiscount = (
   if (discountPercentage) {
     const priceWithDiscount = basePrice - (basePrice * discountPercentage) / 100
 
-    return formattedPriceForBrl(priceWithDiscount)
+    return priceWithDiscount
   }
 
-  return formattedPriceForBrl(basePrice)
+  return basePrice
 }

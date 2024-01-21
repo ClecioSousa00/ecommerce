@@ -11,6 +11,7 @@ export const useCart = (product: CartProduct) => {
     increaseProductQuantity,
     decrementProductQuantity,
     removeProductToCart,
+    products,
   } = useCartContext()
 
   const priceProductWithQuantity =
@@ -32,6 +33,7 @@ export const useCart = (product: CartProduct) => {
     decrementProductQuantity(product.id)
     handleDecrement()
   }
+
   return {
     newPriceWithDiscount,
     quantity,

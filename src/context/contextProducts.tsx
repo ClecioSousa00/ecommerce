@@ -12,12 +12,12 @@ import {
 
 export type CartProduct = {
   quantity: number
+  totalPrice: number
 } & Product
 
 type CartContextProps = {
   products: CartProduct[]
   addProductCart: (product: CartProduct) => void
-  subTotal: number
   totalPriceByProducts: number
   increaseProductQuantity: (productId: string) => void
   decrementProductQuantity: (productId: string) => void
@@ -33,11 +33,11 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setCartProducts([...cartProducts, product])
   }
 
-  const calculateSubTotal = useCallback(() => {
-    return cartProducts.reduce((acc, product) => {
-      return Number(product.basePrice) * product.quantity + acc
-    }, 0)
-  }, [cartProducts])
+  // const calculateSubTotal = useCallback(() => {
+  //   return cartProducts.reduce((acc, product) => {
+  //     return Number(product.basePrice) * product.quantity + acc
+  //   }, 0)
+  // }, [cartProducts])
 
   const calculatePriceWithDiscount = (
     basePrice: number,
@@ -104,7 +104,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setCartProducts(productsInStorage)
   }, [])
 
-  const subTotal = calculateSubTotal()
+  // const subTotal = calculateSubTotal()
   const totalPriceByProducts = calculateTotal()
 
   return (
@@ -112,7 +112,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       value={{
         products: cartProducts,
         addProductCart,
-        subTotal,
+
         totalPriceByProducts,
         increaseProductQuantity,
         decrementProductQuantity,

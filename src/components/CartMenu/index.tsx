@@ -7,13 +7,28 @@ import { CartItem } from './CartItem'
 import { ScrollArea } from '../ui/scroll-area'
 import { Separator } from '../ui/separator'
 import { useCartContext } from '@/context/contextProducts'
+import { createCheckout } from '@/actions/checkout'
+import { loadStripe } from '@stripe/stripe-js'
+import { useCallback } from 'react'
 
 export const CartMenu = () => {
-  const { products, subTotal, totalPriceByProducts } = useCartContext()
+  const { products, totalPriceByProducts } = useCartContext()
 
-  const totalDiscount = subTotal - totalPriceByProducts
+  const calculateSubTotal = useCallback(() => {
+    return products.reduce((acc, product) => {
+      return Number(product.basePrice) * product.quantity + acc
+    }, 0)
+  }, [products])
 
-  console.log(subTotal)
+  const totalDiscount = calculateSubTotal() - totalPriceByProducts
+
+  const handleFinishPurchase = async () => {
+    const stripeCheckout = await createCheckout(products)
+    const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY)
+    stripe?.redirectToCheckout({
+      sessionId: stripeCheckout.id,
+    })
+  }
 
   return (
     <div className="flex h-full flex-col items-start">
@@ -33,7 +48,7 @@ export const CartMenu = () => {
         <Separator className="my-2" />
         <div className="flex justify-between text-sm capitalize">
           <p>subtotal</p>
-          <p>R$ {subTotal.toFixed(2)}</p>
+          <p>R$ {calculateSubTotal().toFixed(2)}</p>
         </div>
         <Separator className="my-2" />
         <div className="flex justify-between text-sm capitalize">
@@ -50,8 +65,11 @@ export const CartMenu = () => {
           <p>total</p>
           <p>R$ {totalPriceByProducts.toFixed(2)}</p>
         </div>
-        <Button className="mt-2 w-full rounded-lg bg-primary text-sm font-bold uppercase">
-          adicionar ao carrinho
+        <Button
+          onClick={handleFinishPurchase}
+          className="mt-2 w-full rounded-lg bg-primary text-sm font-bold uppercase"
+        >
+          finalizar compra
         </Button>
       </div>
     </div>
