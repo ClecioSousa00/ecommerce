@@ -7,7 +7,7 @@ type ProductListProps = {
 
 export const ProductList = async ({ products }: ProductListProps) => {
   return (
-    <div className="flex  gap-4 overflow-y-hidden  [&::-webkit-scrollbar]:hidden">
+    <div className="flex  gap-8 overflow-y-hidden  [&::-webkit-scrollbar]:hidden">
       {products.map((product) => (
         <ProductItem key={product.id} product={product} />
       ))}
