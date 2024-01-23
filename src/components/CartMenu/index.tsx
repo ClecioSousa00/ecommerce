@@ -6,29 +6,18 @@ import { BadgeCategory } from '../BadgeCategory'
 import { CartItem } from './CartItem'
 import { ScrollArea } from '../ui/scroll-area'
 import { Separator } from '../ui/separator'
-import { useCartContext } from '@/context/contextProducts'
-import { createCheckout } from '@/actions/checkout'
-import { loadStripe } from '@stripe/stripe-js'
-import { useCallback } from 'react'
+
+import { useCartMenu } from './hooks/useCartMenu'
+import { formattedPriceForBrl } from '@/utils/formattedPriceForBrl'
 
 export const CartMenu = () => {
-  const { products, totalPriceByProducts } = useCartContext()
-
-  const calculateSubTotal = useCallback(() => {
-    return products.reduce((acc, product) => {
-      return Number(product.basePrice) * product.quantity + acc
-    }, 0)
-  }, [products])
-
-  const totalDiscount = calculateSubTotal() - totalPriceByProducts
-
-  const handleFinishPurchase = async () => {
-    const stripeCheckout = await createCheckout(products)
-    const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY)
-    stripe?.redirectToCheckout({
-      sessionId: stripeCheckout.id,
-    })
-  }
+  const {
+    calculateSubTotal,
+    handleFinishPurchase,
+    products,
+    totalDiscount,
+    totalPriceByProducts,
+  } = useCartMenu()
 
   return (
     <div className="flex h-full flex-col items-start">
@@ -41,14 +30,13 @@ export const CartMenu = () => {
             products.map((product) => (
               <CartItem product={product} key={product.id} />
             ))}
-          {/* <CartItem /> */}
         </div>
       </ScrollArea>
       <div className="w-full">
         <Separator className="my-2" />
         <div className="flex justify-between text-sm capitalize">
           <p>subtotal</p>
-          <p>R$ {calculateSubTotal().toFixed(2)}</p>
+          <p>{formattedPriceForBrl(calculateSubTotal())}</p>
         </div>
         <Separator className="my-2" />
         <div className="flex justify-between text-sm capitalize">
@@ -58,12 +46,12 @@ export const CartMenu = () => {
         <Separator className="my-2" />
         <div className="flex justify-between text-sm capitalize">
           <p>descontos</p>
-          <p>- R$ {totalDiscount.toFixed(2)}</p>
+          <p>- {formattedPriceForBrl(totalDiscount)}</p>
         </div>
         <Separator className="my-2" />
         <div className="flex justify-between font-bold uppercase ">
           <p>total</p>
-          <p>R$ {totalPriceByProducts.toFixed(2)}</p>
+          <p>{formattedPriceForBrl(totalPriceByProducts)}</p>
         </div>
         <Button
           onClick={handleFinishPurchase}

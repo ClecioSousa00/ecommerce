@@ -3,54 +3,24 @@
 import { CounterProduct } from '@/components/CounterProduct'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { useCartContext } from '@/context/contextProducts'
-import { UseCounter } from '@/hooks/useCounter'
-import { saveProductInStorage } from '@/storage/saveProductInStorage'
-import { calculatePriceWithDiscount } from '@/utils/calculatePriceWithDiscount'
 import { Product } from '@prisma/client'
 import { ArrowDown, StarIcon } from 'lucide-react'
-import { useToast } from '@/components/ui/use-toast'
-import { getProductInStorage } from '@/storage/getProductInStorage'
+import { formattedPriceForBrl } from '@/utils/formattedPriceForBrl'
+import { useProductInfo } from '../../hooks/useProductInfo'
 
 type ProductInfoProps = {
   product: Product
 }
 
 export const ProductInfo = ({ product }: ProductInfoProps) => {
-  const { quantity, handleIncrement, handleDecrement } = UseCounter()
-  const { addProductCart, products } = useCartContext()
-  const { toast } = useToast()
-
-  const handleAddProductToCartAndStorage = () => {
-    const productHasInCart = products.some(
-      (productCart) => productCart.id === product.id,
-    )
-
-    if (productHasInCart) {
-      toast({
-        description: 'O produto já está no carrinho',
-      })
-      return
-    }
-
-    addProductCart({ ...product, quantity })
-    saveProductInStorage({ ...product, quantity })
-
-    toast({
-      title: `${product.name}`,
-      description: 'Adicionado com sucesso !!',
-    })
-  }
-
-  const priceProductWithQuantity =
-    quantity > 0
-      ? quantity * Number(product.basePrice)
-      : Number(product.basePrice)
-
-  const newPriceWithDiscount = calculatePriceWithDiscount(
+  const {
+    handleAddProductToCartAndStorage,
+    handleDecrement,
+    handleIncrement,
+    newPriceWithDiscount,
     priceProductWithQuantity,
-    product.discountPercentage,
-  )
+    quantity,
+  } = useProductInfo(product)
 
   return (
     <>
@@ -70,7 +40,9 @@ export const ProductInfo = ({ product }: ProductInfoProps) => {
       </div>
       <div className="mb-4">
         <div className="flex items-center gap-2">
-          <strong className="text-2xl">{newPriceWithDiscount}</strong>
+          <strong className="text-2xl">
+            {formattedPriceForBrl(newPriceWithDiscount)}
+          </strong>
           {!!product.discountPercentage && (
             <Badge>
               <ArrowDown size={14} />
@@ -82,7 +54,7 @@ export const ProductInfo = ({ product }: ProductInfoProps) => {
         </div>
         {!!product.discountPercentage && (
           <span className="text-secondary-foreground/30  line-through ">
-            De: R$ {priceProductWithQuantity}
+            De: {formattedPriceForBrl(priceProductWithQuantity)}
           </span>
         )}
       </div>

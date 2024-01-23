@@ -1,12 +1,10 @@
-import { ArrowDown, StarIcon } from 'lucide-react'
-import prisma from '../../../lib/prisma'
+import { useGetProduct } from '../hooks/useGetProduct'
+
 import { ProductImages } from '../components/ProductImages'
-import { CounterProduct } from '@/components/CounterProduct'
-import { calculatePriceWithDiscount } from '@/utils/calculatePriceWithDiscount'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+
 import { TruckIcon } from '@/iconsSvg/TruckIcon'
 import { ProductList } from '@/components/ProductList'
+
 import { ProductInfo } from '../components/ProductInfo'
 
 type ProductProps = {
@@ -16,24 +14,7 @@ type ProductProps = {
 }
 
 export default async function Product({ params }: ProductProps) {
-  const product = await prisma.product.findFirst({
-    where: {
-      slug: params.slug,
-    },
-    include: {
-      category: {
-        include: {
-          products: {
-            where: {
-              slug: {
-                not: params.slug,
-              },
-            },
-          },
-        },
-      },
-    },
-  })
+  const { product } = await useGetProduct(params.slug)
 
   if (!product) return null
 

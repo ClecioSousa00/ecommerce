@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Badge } from '../ui/badge'
 import { Product } from '@prisma/client'
 import { calculatePriceWithDiscount } from '@/utils/calculatePriceWithDiscount'
+import { formattedPriceForBrl } from '@/utils/formattedPriceForBrl'
 
 type ProductItemProps = {
   product: Product
@@ -41,11 +42,13 @@ export const ProductItem = ({ product }: ProductItemProps) => {
           {product.name}
         </h3>
         <div>
-          <strong className="font-medium"> {newPriceProduct}</strong>
+          <strong className="font-medium">
+            {formattedPriceForBrl(newPriceProduct)}
+          </strong>
 
           {product.discountPercentage > 0 && (
             <span className=" ml-1 text-xs line-through opacity-75">
-              R$ {Number(product.basePrice)}
+              {formattedPriceForBrl(Number(product.basePrice))}
             </span>
           )}
         </div>

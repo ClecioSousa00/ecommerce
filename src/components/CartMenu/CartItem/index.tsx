@@ -1,9 +1,8 @@
 import { CounterProduct } from '@/components/CounterProduct'
 import { Button } from '@/components/ui/button'
-import { CartProduct, useCartContext } from '@/context/contextProducts'
+import { CartProduct } from '@/context/contextProducts'
 import { useCart } from '@/hooks/useCart'
-import { UseCounter } from '@/hooks/useCounter'
-import { calculatePriceWithDiscount } from '@/utils/calculatePriceWithDiscount'
+
 import { Trash } from 'lucide-react'
 import Image from 'next/image'
 
