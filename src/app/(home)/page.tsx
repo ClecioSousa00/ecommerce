@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import { ButtonCategory } from './components/ButtonCategory'
 import { ProductList } from '../../components/ProductList'
-import { getDataPrisma } from '../../../prisma/utils/dataPrisma'
+import { loadProductsPrisma } from '@/utils/loadProductsPrisma'
 
 export default async function Home() {
   const { categories, keyboards, mouses, productsWitchDiscount } =
-    await getDataPrisma()
+    await loadProductsPrisma()
 
   return (
     <main className="mt-6 lg:mt-0">

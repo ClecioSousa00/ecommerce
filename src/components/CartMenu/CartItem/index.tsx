@@ -2,6 +2,7 @@ import { CounterProduct } from '@/components/CounterProduct'
 import { Button } from '@/components/ui/button'
 import { CartProduct } from '@/context/contextProducts'
 import { useCart } from '@/hooks/useCart'
+import { formattedPriceForBrl } from '@/utils/formattedPriceForBrl'
 
 import { Trash } from 'lucide-react'
 import Image from 'next/image'
@@ -41,9 +42,11 @@ export const CartItem = ({ product }: CartItemProps) => {
             {product.name}
           </h3>
           <div>
-            <strong className="font-medium">{newPriceWithDiscount}</strong>
+            <strong className="font-medium">
+              {formattedPriceForBrl(newPriceWithDiscount)}
+            </strong>
             <span className=" ml-1 text-xs line-through opacity-75 lg:text-sm">
-              R$ {priceProductWithQuantity}
+              {formattedPriceForBrl(priceProductWithQuantity)}
             </span>
           </div>
         </div>

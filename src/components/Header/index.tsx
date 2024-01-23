@@ -21,8 +21,17 @@ import {
 import Link from 'next/link'
 import { CartMenu } from '../CartMenu'
 import { signIn, signOut, useSession } from 'next-auth/react'
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
+
 import { Separator } from '../ui/separator'
+import { UserAvatar } from '../UserAvatar'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '../ui/dropdown-menu'
 
 export const Header = () => {
   const { status, data } = useSession()
@@ -54,15 +63,7 @@ export const Header = () => {
               Menu
             </SheetHeader>
             {status === 'authenticated' && data?.user && (
-              <div className="flex items-center gap-2">
-                <Avatar>
-                  <AvatarFallback>
-                    {data.user.name?.[0].toUpperCase()}
-                  </AvatarFallback>
-                  {data.user.image && <AvatarImage src={data.user.image} />}
-                </Avatar>
-                <p>{data.user.name}</p>
-              </div>
+              <UserAvatar data={data} />
             )}
             <Separator className="my-4" />
             <ul className="mt-6 space-y-2 font-bold">
@@ -145,13 +146,47 @@ export const Header = () => {
       </ul>
 
       <div className="lg:flex lg:gap-6">
-        <Button
-          className="hidden bg-transparent hover:bg-gray-500/30 lg:flex"
-          size={'icon'}
-          variant={'outline'}
-        >
-          <User size={18} color="white" />
-        </Button>
+        <div className="">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button
+                className="hidden bg-transparent hover:bg-gray-500/30 lg:flex"
+                size={'icon'}
+                variant={'outline'}
+              >
+                <User size={18} color="white" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>
+                {status === 'authenticated' && data?.user && (
+                  <UserAvatar data={data} />
+                )}
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>
+                {status === 'unauthenticated' && (
+                  <Button
+                    className="w-full  gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14"
+                    variant={'outline'}
+                    onClick={handleLogin}
+                  >
+                    <LogIn size={18} /> Fazer Login
+                  </Button>
+                )}
+                {status === 'authenticated' && (
+                  <Button
+                    className="w-full  gap-2 px-10 py-4 text-xs font-bold capitalize lg:px-14"
+                    variant={'outline'}
+                    onClick={handleLogOut}
+                  >
+                    <LogOut size={18} /> Fazer LogOut
+                  </Button>
+                )}
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
 
         <Sheet>
           <SheetTrigger asChild>

@@ -1,6 +1,6 @@
 import prisma from '@/lib/prisma'
 
-export const getDataPrisma = async () => {
+export const loadProductsPrisma = async () => {
   const categories = await prisma.category.findMany()
   // console.log(categories)
 
