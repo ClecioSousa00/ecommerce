@@ -9,6 +9,8 @@ import { saveProductInStorage } from '@/storage/saveProductInStorage'
 import { calculatePriceWithDiscount } from '@/utils/calculatePriceWithDiscount'
 import { Product } from '@prisma/client'
 import { ArrowDown, StarIcon } from 'lucide-react'
+import { useToast } from '@/components/ui/use-toast'
+import { getProductInStorage } from '@/storage/getProductInStorage'
 
 type ProductInfoProps = {
   product: Product
@@ -16,11 +18,28 @@ type ProductInfoProps = {
 
 export const ProductInfo = ({ product }: ProductInfoProps) => {
   const { quantity, handleIncrement, handleDecrement } = UseCounter()
-  const { addProductCart } = useCartContext()
+  const { addProductCart, products } = useCartContext()
+  const { toast } = useToast()
 
   const handleAddProductToCartAndStorage = () => {
+    const productHasInCart = products.some(
+      (productCart) => productCart.id === product.id,
+    )
+
+    if (productHasInCart) {
+      toast({
+        description: 'O produto já está no carrinho',
+      })
+      return
+    }
+
     addProductCart({ ...product, quantity })
     saveProductInStorage({ ...product, quantity })
+
+    toast({
+      title: `${product.name}`,
+      description: 'Adicionado com sucesso !!',
+    })
   }
 
   const priceProductWithQuantity =

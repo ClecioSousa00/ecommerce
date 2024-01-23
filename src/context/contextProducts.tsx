@@ -12,7 +12,6 @@ import {
 
 export type CartProduct = {
   quantity: number
-  totalPrice: number
 } & Product
 
 type CartContextProps = {
