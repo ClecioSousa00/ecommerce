@@ -20,13 +20,13 @@ export const ProductImages = ({
 
   return (
     <div className=" overflow-hidden lg:relative  lg:flex-1   lg:rounded-2xl lg:bg-accent ">
-      <div className="flex  h-96 items-center justify-center rounded-b-2xl bg-accent  ">
+      <div className="relative h-96   flex-1 rounded-b-2xl bg-accent  lg:m-auto lg:h-3/4 lg:w-1/2  ">
         <Image
-          className="h-auto max-h-[70%] w-auto max-w-[80%]"
+          className="object-contain"
           src={imageUrl}
           alt={productName}
-          height={0}
-          width={0}
+          fill
+          sizes="100%"
           unoptimized
         />
       </div>
@@ -35,17 +35,17 @@ export const ProductImages = ({
         {imageUrls.map((image) => (
           <button
             key={productName}
-            className={`flex h-20  w-20 items-center justify-center rounded-sm bg-accent lg:rounded-md lg:bg-black ${
+            className={`relative  h-20  w-20  rounded-sm bg-accent lg:rounded-md lg:bg-black ${
               imageUrl === image ? 'border-2 border-primary' : ''
             }`}
             onClick={() => selectImageProduct(image)}
           >
             <Image
-              className="h-auto max-h-[70%] w-auto max-w-[80%]"
+              className="object-contain"
               src={image}
               alt={productName}
-              height={0}
-              width={0}
+              fill
+              sizes="100%"
               unoptimized
             />
           </button>
