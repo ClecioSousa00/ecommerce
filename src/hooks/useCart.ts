@@ -11,7 +11,6 @@ export const useCart = (product: CartProduct) => {
     increaseProductQuantity,
     decrementProductQuantity,
     removeProductToCart,
-    products,
   } = useCartContext()
 
   const priceProductWithQuantity =

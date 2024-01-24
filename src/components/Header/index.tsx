@@ -1,28 +1,12 @@
 'use client'
 
-import {
-  Home,
-  ListOrdered,
-  LogIn,
-  LogOut,
-  Menu,
-  PercentIcon,
-  ShoppingCart,
-  User,
-} from 'lucide-react'
-import { Button, buttonVariants } from '../ui/button'
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetTrigger,
-} from '../ui/sheet'
+import { LogIn, LogOut, User } from 'lucide-react'
+import { Button } from '../ui/button'
+
 import Link from 'next/link'
 import { CartMenu } from '../CartMenu'
 import { signIn, signOut, useSession } from 'next-auth/react'
 
-import { Separator } from '../ui/separator'
 import { UserAvatar } from '../UserAvatar'
 import {
   DropdownMenu,
