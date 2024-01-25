@@ -42,35 +42,45 @@ export const CartMenu = () => {
                   <CartItem product={product} key={product.id} />
                 ))}
             </div>
+            {products.length === 0 && (
+              <div>
+                <p className="text-center text-secondary-foreground/40">
+                  Carrinho Vazio
+                </p>
+              </div>
+            )}
           </ScrollArea>
-          <div className="w-full">
-            <Separator className="my-2" />
-            <div className="flex justify-between text-sm capitalize">
-              <p>subtotal</p>
-              <p>{formattedPriceForBrl(calculateSubTotal())}</p>
+
+          {products.length > 0 && (
+            <div className="w-full">
+              <Separator className="my-2" />
+              <div className="flex justify-between text-sm capitalize">
+                <p>subtotal</p>
+                <p>{formattedPriceForBrl(calculateSubTotal())}</p>
+              </div>
+              <Separator className="my-2" />
+              <div className="flex justify-between text-sm capitalize">
+                <p>entrega</p>
+                <p className="uppercase"> grátis</p>
+              </div>
+              <Separator className="my-2" />
+              <div className="flex justify-between text-sm capitalize">
+                <p>descontos</p>
+                <p>- {formattedPriceForBrl(totalDiscount)}</p>
+              </div>
+              <Separator className="my-2" />
+              <div className="flex justify-between font-bold uppercase ">
+                <p>total</p>
+                <p>{formattedPriceForBrl(totalPriceByProducts)}</p>
+              </div>
+              <Button
+                onClick={handleFinishPurchase}
+                className="mt-2 w-full rounded-lg bg-primary text-sm font-bold uppercase"
+              >
+                finalizar compra
+              </Button>
             </div>
-            <Separator className="my-2" />
-            <div className="flex justify-between text-sm capitalize">
-              <p>entrega</p>
-              <p className="uppercase"> grátis</p>
-            </div>
-            <Separator className="my-2" />
-            <div className="flex justify-between text-sm capitalize">
-              <p>descontos</p>
-              <p>- {formattedPriceForBrl(totalDiscount)}</p>
-            </div>
-            <Separator className="my-2" />
-            <div className="flex justify-between font-bold uppercase ">
-              <p>total</p>
-              <p>{formattedPriceForBrl(totalPriceByProducts)}</p>
-            </div>
-            <Button
-              onClick={handleFinishPurchase}
-              className="mt-2 w-full rounded-lg bg-primary text-sm font-bold uppercase"
-            >
-              finalizar compra
-            </Button>
-          </div>
+          )}
         </div>
       </SheetContent>
     </Sheet>

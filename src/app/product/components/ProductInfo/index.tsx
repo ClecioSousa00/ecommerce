@@ -28,11 +28,11 @@ export const ProductInfo = ({ product }: ProductInfoProps) => {
       <span className="text-xs text-primary">Disponível em estoque </span>
       <div className="flex items-center gap-2">
         <div className="flex gap-1">
-          <StarIcon size={12} />
-          <StarIcon size={12} />
-          <StarIcon size={12} />
-          <StarIcon size={12} />
-          <StarIcon size={12} />
+          <StarIcon size={12} color="#4F32C3" fill="#4F32C3" />
+          <StarIcon size={12} color="#4F32C3" fill="#4F32C3" />
+          <StarIcon size={12} color="#4F32C3" fill="#4F32C3" />
+          <StarIcon size={12} color="#4F32C3" fill="#4F32C3" />
+          <StarIcon size={12} color="#4F32C3" />
         </div>
         <span className="text-xs text-secondary-foreground/30">
           (25) avaliações
