@@ -1,5 +1,6 @@
 import { Decimal } from '@prisma/client/runtime/library'
 import { Prisma, Product } from '@prisma/client'
+import { CartProduct } from '@/context/contextProducts'
 
 const product: Product = {
   id: '1',
@@ -43,9 +44,21 @@ const mouses: Product[] = [
     discountPercentage: 10,
   },
 ]
+const productCart: CartProduct = {
+  id: '1',
+  name: 'Logitech MX Master 3s',
+  slug: 'logitech-mx-master-3s',
+  description: 'Lorem ipsum dolor sit.',
+  imageUrls: ['url1', 'url2', 'url3', 'url4'],
+  basePrice: 500 as unknown as Prisma.Decimal,
+  categoryId: 'mouses',
+  discountPercentage: 10,
+  quantity: 0,
+}
 
 export const mocks = {
   product,
   keyboards,
   mouses,
+  productCart,
 }
