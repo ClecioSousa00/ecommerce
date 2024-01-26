@@ -9,6 +9,9 @@ describe('Component: ButtonCategory', () => {
     const link = screen.getByRole('link', {
       name: `${mocks.productCategory.name}`,
     })
+
+    expect(link.getAttribute('href')).toBe('/category/mouses')
+
     expect(link).toBeTruthy()
   })
 })
