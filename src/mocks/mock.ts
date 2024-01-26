@@ -1,5 +1,5 @@
 import { Decimal } from '@prisma/client/runtime/library'
-import { Prisma, Product } from '@prisma/client'
+import { Category, Prisma, Product } from '@prisma/client'
 import { CartProduct } from '@/context/contextProducts'
 
 const product: Product = {
@@ -55,10 +55,17 @@ const productCart: CartProduct = {
   discountPercentage: 10,
   quantity: 0,
 }
+const productCategory: Category = {
+  id: '1',
+  imageUrl: 'URL1',
+  name: 'mouses',
+  slug: 'mouses',
+}
 
 export const mocks = {
   product,
   keyboards,
   mouses,
   productCart,
+  productCategory,
 }
