@@ -32,9 +32,9 @@ export const ProductImages = ({
       </div>
 
       <div className="top-0 mt-8 flex justify-center gap-5 px-5 lg:absolute lg:flex-col">
-        {imageUrls.map((image) => (
+        {imageUrls.map((image, index) => (
           <button
-            key={productName}
+            key={index}
             className={`relative  h-20  w-20  rounded-sm bg-accent lg:rounded-md lg:bg-black ${
               imageUrl === image ? 'border-2 border-primary' : ''
             }`}
