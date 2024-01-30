@@ -44,7 +44,7 @@ export const ProductInfo = ({ product }: ProductInfoProps) => {
             {formattedPriceForBrl(newPriceWithDiscount)}
           </strong>
           {!!product.discountPercentage && (
-            <Badge>
+            <Badge data-testid="badge">
               <ArrowDown size={14} />
               <span className="text-xs font-bold">
                 {product.discountPercentage}%

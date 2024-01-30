@@ -4,7 +4,7 @@ import { ProductList } from '../../components/ProductList'
 import { loadProductsPrisma } from '@/utils/loadProductsPrisma'
 
 export default async function Home() {
-  const { categories, keyboards, mouses, productsWitchDiscount } =
+  const { categories, keyboards, mouses, productsWithDiscount } =
     await loadProductsPrisma()
 
   return (
@@ -36,7 +36,7 @@ export default async function Home() {
       <div className="px-4 lg:px-24">
         <section className="mt-8 pl-4 ">
           <h2 className="mb-5 font-bold uppercase">ofertas</h2>
-          <ProductList products={productsWitchDiscount} />
+          <ProductList products={productsWithDiscount} />
           <div className=" pr-4 lg:flex lg:justify-between lg:gap-9">
             <Image
               className="mt-8 w-full  lg:w-1/2 "
